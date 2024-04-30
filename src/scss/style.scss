@@ -61,7 +61,13 @@ body {
 	}
 	// .our-cases__left-img
 	&__left-img {
-		max-width: rem(336);
+		position: relative;
+		border-radius: rem(8);
+		overflow: hidden;
+		img {
+			max-width: rem(336);
+			// max-height: rem(732);
+		}
 	}
 	// .our-cases__right-column
 	&__right-column {
@@ -99,6 +105,33 @@ body {
 	margin: 0;
 }
 .swiper-pagination {
+	position: static;
+	display: flex;
+	// gap: rem(150);
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	padding: rem(36) rem(4);
+	height: rem(90);
+	border-radius: rem(37);
+	background: $main-gray;
+	margin-bottom: rem(30);
+}
+button.swiper-pagination-bullet {
+	width: 100%;
+	height: rem(52);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: rem(17) 0 rem(18) 0;
+	background: transparent;
+	border-radius: rem(34);
+	font-weight: 400;
+	font-size: rem(14);
+	color: $main-black;
+}
+.swiper-pagination-bullet-active {
+	background: #fff !important;
 }
 .swiper-wrapper {
 }
@@ -106,10 +139,11 @@ body {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	margin-bottom: rem(30);
+	// margin-bottom: rem(30);
 	cursor: grab;
 }
 .funnel-slide {
+	margin-bottom: rem(30);
 }
 .funnel-top {
 	display: flex;
@@ -217,6 +251,7 @@ body {
 	}
 }
 .was-becam-slide {
+	margin-bottom: rem(30);
 }
 .was-became {
 	// .was-became__inner
@@ -290,6 +325,7 @@ body {
 	}
 }
 .about-slide {
+	margin-bottom: rem(30);
 	// .about-slide__inner
 	&__inner {
 		display: flex;
@@ -339,6 +375,7 @@ body {
 	}
 }
 .done-slide {
+	margin-bottom: rem(30);
 	// .done-slide__inner
 	&__inner {
 		display: flex;

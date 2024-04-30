@@ -3,6 +3,8 @@ import Swiper from 'swiper/bundle';
 
 //=========================================================================================================================================================
 // Swiper
+const tabsMenuItems = ['Воронка', 'Было-стало', 'О компании', 'Что сделали'];
+
 const ourCasesSlider = new Swiper('.our-cases-slider', {
 	loop: true,
 	// autoplay: {
@@ -15,7 +17,8 @@ const ourCasesSlider = new Swiper('.our-cases-slider', {
 		el: '.swiper-pagination',
 		clickable: true,
 		renderBullet: function (index, className) {
-			return '<span class="' + className + '">' + (index + 1) + '</span>';
+			// return '<span class="' + className + '">' + (index + 1) + "</span>";
+			return `<button class=${className}>${tabsMenuItems[index]}</button>`;
 		},
 	},
 	navigation: {
