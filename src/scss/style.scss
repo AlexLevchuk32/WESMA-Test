@@ -128,10 +128,13 @@ button.swiper-pagination-bullet {
 	border-radius: rem(34);
 	font-weight: 400;
 	font-size: rem(14);
-	color: $main-black;
+	color: $main-black !important;
+	cursor: pointer;
+	opacity: 0.6;
 }
 .swiper-pagination-bullet-active {
 	background: #fff !important;
+	opacity: 1 !important;
 }
 .swiper-wrapper {
 }
