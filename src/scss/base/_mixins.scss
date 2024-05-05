@@ -87,10 +87,8 @@
 	// Если не поддерживается clamp();
 	@supports not (#{$property}: $propertyValue) {
 		#{$property}: calc(
-			#{rem($minSize)} + #{$addSize} * (100vw - #{rem($widthTo)}) / #{math.div(
-					$widthFrom,
-					16
-				) - math.div($widthTo, 16)}
+			#{rem($minSize)} + #{$addSize} * (100vw - #{rem($widthTo)}) / #{math.div($widthFrom, 16) -
+				math.div($widthTo, 16)}
 		);
 	}
 
