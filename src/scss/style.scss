@@ -726,6 +726,11 @@ button.swiper-pagination-bullet {
 		&::after {
 			font-size: rem(40);
 		}
+		&:hover {
+			&::after {
+				transform: none;
+			}
+		}
 	}
 
 	.swiper-button-next {
@@ -737,6 +742,11 @@ button.swiper-pagination-bullet {
 		}
 		&::after {
 			font-size: rem(40);
+		}
+		&:hover {
+			&::after {
+				transform: none;
+			}
 		}
 	}
 }
@@ -835,24 +845,24 @@ button.swiper-pagination-bullet {
 	}
 
 	.swiper-button-prev {
-		// left: rem(0);
-		// &::before {
-		// 	width: 25vw;
-		// 	height: 25vw;
-		// 	left: -6rem;
-		// 	border-radius: 50%;
-		// }
-		display: none;
+		left: -1rem;
+		&::before {
+			width: 32vw;
+			height: 32vw;
+			left: -4rem;
+			border-radius: 50%;
+		}
+		// display: none;
 	}
 
 	.swiper-button-next {
-		// right: rem(0);
-		// &::before {
-		// 	width: 25vw;
-		// 	height: 25vw;
-		// 	right: -6rem;
-		// 	border-radius: 50%;
-		// }
-		display: none;
+		right: -1rem;
+		&::before {
+			width: 32vw;
+			height: 32vw;
+			right: -4rem;
+			border-radius: 50%;
+		}
+		// display: none;
 	}
 }
